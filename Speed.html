@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="Speed.css">
+<link rel="stylesheet" href="converter.css">
+<link rel="manifest" href="/manifest.json">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="AeroScope" href="F-35 Logo-modified.png" />
+<body>
+<div class="sidebar" id="sidebar">
+  <a href="index.html" class="close-btn" onclick="toggleSidebar()">&times;</a>
+  <a href="index.html">Home</a>
+  <a href="Aircrafts.html">Aircrafts</a>
+  <a href="Speed.html">Speed</a>
+  <a href="Add.html">Add a Plane</a>
+</div>
+
+<div class="main-content" id="main-content">
+  <button class="open-btn" onclick="toggleSidebar()">☰</button>
+  <br>
+  <img src="F-35 Logo - NOBG (1).png" alt="F-35 Logo" class="center" id="">
+  <h1>Aero Scope</h1>
+  <br>
+  <br>
+  <br>
+  <h2>Speed</h2>
+  <br>
+  <br>
+  <br>
+  <br>
+    <h3>F-35 Lightning</h3>
+    <h4>Mach 1.6</h4>
+    <br>
+    <h3>F-22 Raptor</h3>
+    <h4>Mach 2.25</h4>
+    <br>
+    <h3>Concorde</h3>
+    <h4>Mach 2.04</h4>
+    <br>
+    <h3>Su-27</h3>
+    <h4>Mach 2.35</h4>
+    <br>
+    <h3>F/A 18 Super Hornet</h3>
+    <h4>Mach 1.6</h4>
+    <br>
+    <br>
+    <header>
+      <h5>Aircraft Name</h1>    
+      <nav>
+          <a href="Add.html">
+              <button>Add a Plane</button>
+          </a>
+      </nav>
+  </header>
+</div>
+
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const mainContent = document.getElementById('main-content');
+    sidebar.classList.toggle('active');
+    mainContent.classList.toggle('shifted');
+  }
+</script>
+<script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js', { scope: '/' });
+  }

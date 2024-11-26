@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "Aero Scope",
+    "short_name": "Aero Scope",
+    "description": "A basic website to display the current fastest millitary aircrafts in the whole entire world",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/F-35 Logo-modified.png",
+            "sizes": "512x512"
+        }
+    ]
+}

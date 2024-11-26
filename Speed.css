@@ -1,0 +1,21 @@
+h3 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+button{
+    text-align: center;
+    padding: 25px;
+    margin: 20;
+    position: relative;
+}
+
+h5 {
+    text-align: left;
+    padding: 25px;
+    font-size: 30px;
+}

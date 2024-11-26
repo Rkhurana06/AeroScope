@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="converter.css">
+    <link rel="manifest" href="/manifest.json">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="AeroScope" href="F-35 Logo-modified.png" />
+    <title>Aero Scope</title>
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <a href="index.html" class="close-btn" onclick="toggleSidebar()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="Aircrafts.html">Aircrafts</a>
+      <a href="Speed.html">Speed</a>
+      <a href="Add.html">Add a Plane</a>
+    </div>
+  
+    <div class="main-content" id="main-content">
+      <button class="open-btn" onclick="toggleSidebar()">☰</button>
+      <br>
+      <img src="F-35 Logo - NOBG (1).png" alt="F-35 Logo" class="center">
+      <h1>Aero Scope</h1>
+      <p>Description: This webpage displays the Most Fastest Planes! You can even list your favourite fastest Plane by clicking the 'Add a Plane' button! We would love to see you guys to add more aircarfts to this page</p>
+      <br>
+      <br>
+      <br>
+      <img src="432478.jpg" alt="C-17 GLobemaster Picture" class="image">
+    </div>
+  
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.getElementById('sidebar');
+        const mainContent = document.getElementById('main-content');
+        sidebar.classList.toggle('active');
+        mainContent.classList.toggle('shifted');
+      }
+    </script>
+    <script>
+      if('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' });
+      }
+    // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyBRYmgHzfibbluGa1F_nNXuxLufNmaCRo8",
+  authDomain: "aeroscope-pwa-2d732.firebaseapp.com",
+  projectId: "aeroscope-pwa-2d732",
+  storageBucket: "aeroscope-pwa-2d732.firebasestorage.app",
+  messagingSenderId: "271822885787",
+  appId: "1:271822885787:web:ea7544c0549b0f3f1b873e",
+  measurementId: "G-K4NYVKE3CV"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+  </body>
+</html>
