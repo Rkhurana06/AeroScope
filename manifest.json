@@ -1,17 +1,27 @@
 {
-    "lang": "en-us",
+
     "name": "Aero Scope",
-    "short_name": "Aero Scope",
+    "short_name": "ASCOPE",
+
     "description": "A basic website to display the current fastest millitary aircrafts in the whole entire world",
-    "start_url": "/",
+   
+
+    "scope": "https://rkhurana06.github.io/AeroScope/",
+    "start_url": "https://rkhurana06.github.io/AeroScope/",
+   
+
     "background_color": "#2f3d58",
     "theme_color": "#2f3d58",
-    "orientation": "any",
-    "display": "standalone",
+   
+
+    "display": "standalone", 
+   
+
     "icons": [
         {
-            "src": "/F-35 Logo-modified.png",
-            "sizes": "512x512"
+          "src": "F-35 Logo-modified.png",
+          "type": "png",
+          "sizes": "700x700"
         }
     ]
-}
+  }
